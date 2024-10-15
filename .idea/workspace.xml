@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f43c2e4a-9153-4864-9d63-0dbe7253cd57" name="Changes" comment="Project setup, Home page">
-      <change afterPath="$PROJECT_DIR$/movies/static/movies/movies_list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movies/static/movies/about_us.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/movies/about_us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movies/static/movies/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/movies/static/movies/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movies/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/movies/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/movies/movie_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies/movie_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/movies/movies_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/movies/movies_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,26 +48,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.MoviesWebApp.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "chupac",
-    "last_opened_file_path": "C:/Users/Patri/PycharmProjects/MoviesWebApp/movies",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editing.templates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.MoviesWebApp.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;chupac&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Patri/PycharmProjects/MoviesWebApp/movies&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Patri\PycharmProjects\MoviesWebApp\movies" />
@@ -189,6 +190,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project setup, Home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project setup, Home page" />
+    <MESSAGE value="NavBar changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="NavBar changes" />
   </component>
 </project>

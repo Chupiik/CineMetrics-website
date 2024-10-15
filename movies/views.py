@@ -7,6 +7,10 @@ from .models import Movie
 def home(request):
     return render(request, 'movies/home.html')
 
+def about_us(request):
+    return render(request, 'movies/about_us.html')
+
+
 def movies_list(request):
     movies = Movie.objects.all()
     return render(request, 'movies/movies_list.html', {'movies': movies})
