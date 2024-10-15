@@ -4,12 +4,13 @@
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movies List - CineMetrics</title>
+    <title>Movie List - CinemaMetrics</title>
     <link rel="stylesheet" href="{% static 'movies/movies_list.css' %}">
 </head>
 <body>
     <header>
-        <h1>Movies List</h1>
+        <h1>Movies</h1>
+
         <nav>
             <ul>
                 <li><a href="{% url 'home' %}">Home</a></li>
@@ -19,14 +20,31 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <ul>
-            {% for movie in movies %}
-                <li><a href="{% url 'movie_detail' movie.id %}">{{ movie.title }}</a></li>
-            {% empty %}
-                <p>No movies available</p>
-            {% endfor %}
-        </ul>
-    </section>
+
+    <main>
+        <div class="container">
+            {% if movies %}
+                <section class="movie-list">
+                    <h2>Movies</h2>
+                    <ul>
+                        {% for movie in movies %}
+                            <li class="movie-item">
+                                <h3>{{ movie.title }}</h3>
+                                <p>Director: {{ movie.director }}</p>
+                                <p>Release Year: {{ movie.release_year }}</p>
+                                <p>{{ movie.description }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            {% else %}
+                <section class="no-movies">
+                    <h2>No Movies Found</h2>
+                    <img src="{% static 'movies/no_movies.jpg' %}" alt="No Movies" class="no-movies-image">
+                    <p>It looks like there are no movies yet.</p>
+                </section>
+            {% endif %}
+        </div>
+    </main>
 </body>
 </html>

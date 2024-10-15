@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: whitesmoke;
-    color: darkslategray;
+    color: black;
 }
 
 header {
@@ -42,6 +42,44 @@ nav ul li a {
 nav ul li a:hover {
     color: orange;
 }
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.movie-list {
+    margin-bottom: 40px;
+}
+
+.movie-item {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.movie-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.no-movies {
+    text-align: center;
+    padding: 20px;
+}
+
+.no-movies-image {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
+}
+
 
 @media (max-width: 768px) {
     nav ul {
