@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies List - CineMetrics</title>
+    <link rel="stylesheet" href="{% static 'movies/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Movies List</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+        </nav>
+    </header>
+    <section>
+        <ul>
+            {% for movie in movies %}
+                <li><a href="{% url 'movie_detail' movie.id %}">{{ movie.title }}</a></li>
+            {% empty %}
+                <p>No movies available</p>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+</html>

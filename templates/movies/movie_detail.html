@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.title }} - CineMetrics</title>
+    <link rel="stylesheet" href="{% static 'movies/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{{ movie.title }}</h1>
+        <nav>
+            <a href="{% url 'movies_list' %}">Back to Movies List</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Directed by: {{ movie.director }}</h2>
+        <p>Released: {{ movie.release_year }}</p>
+        <p>{{ movie.description }}</p>
+    </section>
+</body>
+</html>

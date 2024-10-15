@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMetrics - Home</title>
+    <link rel="stylesheet" href="{% static 'movies/style.css' %}">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>CineMetrics</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="{% url 'movies_list' %}">Browse Movies</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mainText">
+        <div>
+            <h2>Welcome to CineMetrics</h2>
+            <p>Your ultimate destination for all things movies. Discover multitude of films, check ratings, and explore movie statistics.</p>
+            <a href="{% url 'movies_list' %}" class="btn">Explore Movies</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <h3>Discover</h3>
+            <p>Search through a collection of thousands of movies, from all genres and eras, and add your own reviews and ratings.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Rate</h3>
+            <p>Give your ratings to movies you've seen and help others find great films based on your reviews.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Explore</h3>
+            <p>Explore a wealth of movie statistics, including personal statistics shown in graphs</p>
+        </div>
+    </section>
+
+</body>
+</html>
