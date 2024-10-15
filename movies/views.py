@@ -5,7 +5,7 @@ from django.shortcuts import render
 from .models import Movie
 
 def home(request):
-    return render(request, 'movies/home.html')
+    return render(request, 'movies/index.html')
 
 def about_us(request):
     return render(request, 'movies/about_us.html')
